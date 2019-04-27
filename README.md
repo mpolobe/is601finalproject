@@ -1,5 +1,5 @@
 # faq
-git clone https://github.com/NJIT-WIS/faq.git
+git clone https://github.com/mpolobe/is601finalproject.git
 CD into FAQ and run composer install
 cp .env.example to .env
 run: php artisan key:generate
