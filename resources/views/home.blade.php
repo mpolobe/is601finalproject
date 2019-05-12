@@ -2,7 +2,7 @@
 
 
 <p> You are logged in!  {{Auth::user()->email}}</p>
-<img alt="{{Auth::user()->name}}" src="{{Auth::user()->image}}"/>
+<img  class="img-circle" alt="{{Auth::user()->name}}" src="{{Auth::user()->image}}" style= "height: 100px; width: 100px"/>
 
 @section('content')
     <div class="container">

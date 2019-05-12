@@ -25,6 +25,7 @@ class SocialController extends Controller
                 'image'         => $userSocial->getAvatar(),
                 'provider_id'   => $userSocial->getId(),
                 'provider'      => $provider,
+
             ]);
 
             return redirect('/home');
