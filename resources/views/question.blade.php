@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('breadcrumbs', Breadcrumbs::render('home'))
 @section('content')
     <div class="container">
         <div class="row ">
@@ -8,6 +9,7 @@
                     <div class="card-header">Question</div>
 
                     <div class="card-body">
+
                         {{$question->body}}
                     </div>
                     <div class="card-footer">

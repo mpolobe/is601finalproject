@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('login/{provider}', 'SocialController@redirect');
+Route::get('login/{provider}/callback', 'SocialController@Callback');
+Route::get('login/twitter', 'SocialController@twitterRedirect');
+Route::get('login/twitter/callback', 'SocialController@TwitterCallback');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -45,3 +49,11 @@ Route::resources([
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

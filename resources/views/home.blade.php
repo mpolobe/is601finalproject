@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+
+<p> You are logged in!  {{Auth::user()->email}}</p>
+<img alt="{{Auth::user()->name}}" src="{{Auth::user()->image}}"/>
+
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
