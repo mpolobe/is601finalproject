@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
 Route::get('login/{provider}', 'SocialController@redirect');
 Route::get('login/{provider}/callback', 'SocialController@Callback');
 Route::get('login/twitter', 'SocialController@twitterRedirect');

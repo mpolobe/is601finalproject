@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use Validator,Redirect,Response,File;
 use Socialite;
 use Auth;
 use App\User;

@@ -154,7 +154,7 @@ return [
     */
 
     'domain' => env('SESSION_DOMAIN', null),
-
+    'domain' => 'http://is601fp.herokuapp.com',
     /*
     |--------------------------------------------------------------------------
     | HTTPS Only Cookies

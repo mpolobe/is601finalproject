@@ -60,11 +60,12 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <div class="col-md-6 offset-md-4">
-
-                                    <a href="{{ url('/login/facebook') }}" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
-                                    <a href="{{ url('/login/google') }}" class="btn btn-facebook"><i class="fa fa-facebook"></i> Google</a>
+                            <div class="form-group row mb-0">
+                                <div class="col-md-8 offset-md-4">
+                                    <hr>
+                                    <a href="{{ url('/auth/redirect/twitter') }}" class="btn btn-primary"><i class="fa fa-twitter"></i> Twitter</a>
+                                    <a href="{{ url('/login/facebook') }}" class="btn btn-primary"><i class="fa fa-facebook"></i> Facebook</a>
+                                    <a href="{{ url('/login/google') }}" class="btn btn-primary"><i class="fa fa-facebook"></i> Google</a>
                                 </div>
                             </div>
                         </form>
